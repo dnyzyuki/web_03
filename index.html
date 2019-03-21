@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<title>html</title>
 	<style>
-		h1
+		*{color:skyblue;}
+		span.red{color:yellow;}
+/*우선순위 : 전체선택자 * < tag명 class명 < id명 < inline < !important*/
 	</style>
 </head>
 <body>
@@ -48,12 +50,28 @@
 		<input type="text" name="name"><br>
 		<input type="password" name="pwd"><br>
 		<input type="file" name="file_name"><br>
-		<input type="submit"><br>
+
 		<input type="button"><br>
-		<input type="checkbox"><br>
-		<input type="radio" name="man">남성<br>
-		<input type="radio" name="man">여성<br>
+		<input type="radio" name="man" value="m">남성
+		<input type="radio" name="man" value="w">여성<br>
+		<input type="checkbox" name="hobby" value="swim">수영1
+		<input type="checkbox" name="hobby1" value="baseball">야구<br>
+		<select name="food" id=""><br>
+			<option value="apple">사과</option>
+			<option value="banana">바나나</option>
+			<option value="pear">배</option>
+		</select><br><br>
+		<input type="submit">	
+		<input type="reset">
 		</form>
+		<div>안녕하세요1</div>
+		<div>안녕하세요3</div>
+		div>ul>li*10>{menu$}
+		div>h1>[logo]
+		div>img[src="20190321/img/man01_02.jpg]
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing <span style="color:red">elit.</span> Harum quos, optio aliquam totam corporis placeat, vero porro rem sint sapiente consectetur cumque <span class="red">esse</span> necessitatibus sit itaque aperiam consequuntur magnam rerum doloremque suscipit dolores praesentium at? Nostrum impedit itaque fugit, quo expedita cupiditate perferendis ullam doloribus repudiandae, sequi velit laudantium natus eaque maiores iure delectus tempore esse, nesciunt fuga odio praesentium molestias autem, hic harum. Cumque quam quaerat, vel dolorem deleniti, tempore soluta, voluptatem, numquam quos temporibus sunt dignissimos repellendus? Facere, tenetur, iste! Architecto quam, accusamus ducimus doloremque tempore? Veniam quam omnis, accusamus laudantium quis. Natus minus quos consequuntur accusamus blanditiis.</div>
+
+
 	<ul>
 		<li>Lorem ipsum dolor sit amet.</li>
 		<li>Pariatur nobis veniam dolor minima!</li>
