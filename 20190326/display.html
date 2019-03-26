@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>display</title>
+	<style>
+		*{margin: 0px;}
+		body{background-image: url(../images/bg_grid.gif); background-repeat: none}
+		.box{
+			display: none; /*none, block, inline, inline-block 중요 서브메뉴 쇼하이드에 많이 쓰임*/
+			/*width: 200px; height: 200px;*/
+			background-color:rgba(255,0,0,.5); /*rgba값으로 하면 백그라운드컬러만 투명*/
+			padding: 10px;
+			border:1px solid #ff0000;
+			width: 300px; height: 50px;
+			margin: 10px;
+			/*opacity: .5; 안에있는 모든것 다 투명(0과 1사이)*/
+		}
+		.box01{width: 100px; height: 100px;
+		background-color: #f00	;
+		padding: 10px;
+		border:10px solid #000;
+		box-sizing:border-box ; /*안쪽에 패딩생성*/
+		}
+
+	</style>
+
+</head>
+<body>
+	
+	<div class="box">test</div>
+	<div class="box01"></div>
+
+</body>
+</html>
