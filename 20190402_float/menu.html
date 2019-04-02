@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>menu</title>
+	<style>
+		/*reset*/
+		*{margin: 0; padding: 0;}
+		li{list-style: none;}
+		a:link,a:visited{color: #000; text-decoration: none;}
+
+		body
+
+		/*menu layout*/
+		ul.nav{width: 1000px; margin: 0 auto; background-color: #fff;}
+		ul.nav:after{content:""; clear: both; display: block;}
+		ul.nav>li{float:left; border-right: 1px solid gray;}
+		ul.nav>li>a{width: 198px; display: block; text-align: center; line-height: 50px;}
+		ul.nav>li:first-child{border-left: 1px solid gray;}
+		ul.nav>li>a:hover{background-color: darkblue;font-weight:bold;color: white;}
+		div.container{height: 500px; background: #000 url(../images/pc01.jpg) repeat-y center; background-size: cover;}
+
+	</style>
+</head>
+<body>
+	<!-- ul.nav>li*5>a[href="#"]>{menu$} -->
+	<ul class="nav">
+		<li><a href="#">menu1</a></li>
+		<li><a href="#">menu2</a></li>
+		<li><a href="#">menu3</a></li>
+		<li><a href="#">menu4</a></li>
+		<li><a href="#">menu5</a></li>
+	</ul>
+	<div class="container">
+	</div>
+</body>
+</html>

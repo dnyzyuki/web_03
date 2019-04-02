@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+		/*reset*/
+		*{padding:0;margin:0;}
+		li{list-style:none}
+		body{background-image:url(../images/bg_grid.gif);}
+
+		/*nav layout*/
+		div.nav{width: 1000px; margin: 0 auto;}
+		div.nav:after{content: ""; clear: both;display: block;}
+		div.nav>div{
+			float:left;width:20%; 
+			background-color: skyblue; 
+			text-align:center;line-height: 50px;
+			padding: 1px;border: 1px solid #000;
+			box-sizing: border-box;
+		}
+		div.nav>div:nth-child(2n){background-color: blue;}
+	</style>
+</head>
+<body>
+	<!-- ul.nav>li*5>{menu$} -->
+	<div class="nav">
+		<div>menu1</div>
+		<div>menu2</div>
+		<div>menu3</div>
+		<div>menu4</div>
+		<div>menu5</div>
+	</div>
+	</ul>
+</body>
+</html>
