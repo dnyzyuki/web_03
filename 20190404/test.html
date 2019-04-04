@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>menu</title>
+	<style>
+		/*reset*/
+		.clearfix:after{content:"";clear: both;display: block;} 
+		*{margin: 0; padding: 0;}
+		li{list-style: none;}
+		a:link,a:visited{color: #000; text-decoration: none;}
+
+		/*menu layout*/
+		header#menu_top{background-color: #cdcdcd;}
+		ul.nav{width: 1000px; margin: 0 auto; background-color: #fff;}
+		ul.nav:after{content:""; clear: both; display: block;}
+		ul.nav>li{float:left; border-right: 1px solid gray;}
+		ul.nav>li>a{width: 198.8px; display: block; text-align: center; line-height: 50px;}
+		ul.nav>li:first-child{border-left: 1px solid gray;}
+		ul.nav>li>a:hover{background-color: darkblue;font-weight:bold;color: white;}
+		div.container{height: 500px; background: #000 url(../images/pc01.jpg) repeat-y center; background-size: cover;} /*calculator - 1000/3 ctrl+shfit+Y*/
+
+		/*body*/
+		.content{width: 1000px; margin: 0 auto; background-color: skyblue;}
+		.content:after{content:""; clear: both; display: block;}	
+		.content li{width: 333.33px;float:left; text-align: center;}
+		.content li:nth-child(2n){background-color: orange;}
+		.content a{display: block; text-align: center; line-height: 300px;}
+		section a:hover{background-color: red;font-weight: bold;color: white}
+
+		/*section.content{}
+		section.content:after{}
+		section.content>ul{}
+		section.content>ul>li{}
+		section.content>ul>li>a{}
+		section.content>ul>li>a:hover{} 이렇게 순차적으로 생성*/
+
+
+		/*footer*/
+		footer#footer{width: 100%; margin: 0 auto ;background-color: #cdcdcd; text-align: center;line-height: 70px;}
+	</style>
+</head>
+<body>
+	<header id="menu_top">
+		<ul class="nav"> <!-- 앞뒤코드삽입 선택후 단축키 ctrl+shift+g -->
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+		</ul>
+	</header>
+	<div class="container">
+		
+	</div>
+	<section class="content">
+		<ul>
+			<li><a href="#">content1</a></li>
+			<li><a href="#">content1</a></li>
+			<li><a href="#">content1</a></li>
+			<li><a href="#">content1</a></li>
+		</ul>
+	</section>
+	<footer id="footer">
+		footer
+	</footer>
+</body>
+</html>
