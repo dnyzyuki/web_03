@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>himedia</title>
+</head>
+	<style>
+		/*reset*/
+		*{margin: 0;padding: 0;}
+		li{list-style: none;}
+		a:link, a:visited{color: #000; text-decoration: none;}
+
+		/*menu layout*/
+		header#menu_top{background-color: #cdcdcd;}
+		ul.nav{width: 1000px; margin: 0 auto; background-color: #fff;}
+		ul.nav:after{content:""; clear: both; display: block;}
+		ul.nav>li{float:left; border-right: 1px solid gray;}
+		ul.nav>li>a{width: 198.8px; display: block; text-align: center; line-height: 50px;}
+		ul.nav>li:first-child{border-left: 1px solid gray;}
+		ul.nav>li>a:hover{background-color: darkblue;font-weight:bold;color: white;}	
+
+		ul.logo{background-color: #fff;}
+		ul.logo:after{content: "";	clear: both;display: block;}
+		ul.logo>ul{float: left;	border-right: 1px solod gray: ;}
+		ul.logo>ul>li{}
+		ul.logo>ul>li>a{}
+		ul.logo>ul>li>a:hover{}
+
+		
+
+	</style>
+<body>
+	<div>
+		<header id="menu_top">
+			<ul class="logo">
+				<li>하이미디어</li>
+				<li>menu</li>
+			</ul>
+			<ul class="nav"> <!-- 앞뒤코드삽입 선택후 단축키 ctrl+shift+g -->
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</header>
+	</div>
+	<div class="container">
+		
+	</div>
+	<section class="content">
+		<ul>
+			<li><a href="#">content1</a></li>
+			<li><a href="#">content1</a></li>
+			<li><a href="#">content1</a></li>
+			<li><a href="#">content1</a></li>
+		</ul>
+	</section>
+	<footer id="footer">
+		footer
+	</footer>
+</body>
+</html>

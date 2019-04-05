@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>layout</title>
+</head>
+	<style>
+		/*reset*/
+		*{margin: 0; padding: 0; box-sizing: border-box;}
+		li{list-style: none;}
+		a:link,a:visited{text-decoration: none;color: black;}
+		.clearfix:after{content: "";display: block;clear: both;}
+
+		/*main_header*/
+		header#main_header{width: 960px;height: 160px; margin: 0 auto; background: skyblue; position: relative;}
+		header#main_header>h1{width: 150px;height: 160px; background: orange; text-align: center; line-height: 150px; text-indent: -2000px;	background-image: url(../images/testimg.jpg)}
+		header#main_header>h1>a{display: block;}
+
+		header#main_header>nav.nav_gnb{position: absolute; top: 0px;right: 0;width: 400px;height: 60px; background: pink}
+		header#main_header>nav.nav_gnb>ul{width: 100%;}
+		header#main_header>nav.nav_gnb>ul>li{float: left; width: 100px;}
+		header#main_header>nav.nav_gnb>ul>li>a{display: block; line-height: 60px; text-align: center;}
+		header#main_header>nav.nav_gnb>ul>li>a:hover{background: green;	color: white}
+
+		header#main_header>nav.nav_lnb{position: absolute; bottom: 0px;right: 0;width: 700px;height: 60px;background: violet}
+		header#main_header>nav.nav_lnb>ul{width: 100%;}
+		header#main_header>nav.nav_lnb>ul>li{float: left;width: 140px;}
+		header#main_header>nav.nav_lnb>ul>li>a{display: block; line-height: 60px; text-align: center;}
+		header#main_header>nav.nav_lnb>ul>li>a:hover{background: darkblue;	color: white}
+	</style>
+<body>
+	<header id="main_header">
+		<h1><a href="#">LOGO</a></h1>
+		<nav class="nav_gnb">
+			<ul class="nav_gnb	clearfix">
+				<li>menu1</li>
+				<li>menu2</li>
+				<li>menu3</li>
+				<li>menu4</li>
+			</ul>
+		</nav>
+		<nav class="nav_lnb">
+			<ul class="clearfix">
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>new_layout</title>
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<style>
+		/*reset*/
+		*{margin: 0;padding: 0;}
+		li{list-style: none;}
+		a:link, a:visited{color: #000; text-decoration: none;}
+		.clearfix:after{content: ""; display: block;clear: both;}
+
+		/*header*/
+		header#main_header{width: 960px;height: 160px; margin: 0 auto; background: skyblue;position: relative;}
+		header#main_header>h1{width: 150px;height: 160px; line-height: 150px; text-indent: -2000px; background: orange;}
+		header#main_header>h1>a{display: block;}
+
+		header#main_header>ul.nav_gnb{width: 400px;height: 60px; background: pink; position: absolute;top: 0;right: 0;}
+		header#main_header>ul.nav_gnb>li{float: left;width: 25%;}
+		header#main_header>ul.nav_gnb>li>a{display: block;line-height: 60px;text-align: center;}
+		header#main_header>ul.nav_gnb>li>a:hover{color: white;	background-color: green;}
+
+		header#main_header>ul.nav_lnb{width: 700px;height: 60px; background: purple; position: absolute;bottom: 0;right: 0;}
+		header#main_header>ul.nav_lnb>li{float: left;width: 20%;}
+		header#main_header>ul.nav_lnb>li>a{display: block;line-height: 60px;text-align: center; color: white}
+		header#main_header>ul.nav_lnb>li>a:hover{color: white; background-color: green;}
+		/*body*/
+		div#content{width: 960px; background: #cdcdcd; margin: 0 auto; position: relative;}
+			section.main_section{width: 750px;height: 500px;background: #424242;position: absolute;top: 0;left: 0;}
+			aside.main_aside{width: 200px;height: 500px; background: pink;position: absolute;top: 0;right: 0;}
+		/*footer*/
+		footer#main_footer{width: 960px; height: 100px; margin: 0 auto; background: gray;position: relative;}
+		div.visual_wrap img{width: 960px; margin: 0 auto;}
+	</style>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({auto:true,mode:'fade'});
+		});
+	</script>
+
+</head>
+<body>
+	<header id="main_header">
+		<h1>LOGO</h1>
+		<ul class="nav_gnb clearfix">
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+		</ul>
+		<ul class="nav_lnb clearfix">
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+		</ul>
+	</header>
+	<div class="visual_wrap">
+		<!-- ul.slider>li*3>img[src="images/pc0$.jpg"] -->
+		<ul class="slider">
+			<li><img src="images/pc01.jpg" alt=""></li>
+			<li><img src="images/pc02.jpg" alt=""></li>
+			<li><img src="images/pc03.jpg" alt=""></li>
+		</ul>
+	</div>
+	<div id="content">
+		<section class="main_section">main_section</section>
+		<aside class="main_aside">main_aside</aside>
+	</div>
+	<footer id="main_footer">
+		<div>main_footer</div>
+	</footer>
+
+</body>
+</html>
