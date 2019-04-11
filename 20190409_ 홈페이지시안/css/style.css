@@ -15,11 +15,18 @@
 #logo_wrap>div.toggle{position: absolute;top: 5px;right: 0;}
 
 /*main_lnb*/
-#main_lnb_wrap{background: #1c5da3;}
-#main_lnb{width: 980px;margin: 0 auto;}
-#lnb>ul{width: 100%;}
-#lnb>ul>li{float: left; width: 16%; border-right: 1px solid #336eac;}
-#lnb>ul>li:first-child{border-left: 1px solid #336eac;}
-#lnb>ul>li>a{display: block; line-height: 40px;	text-align: center; color: white; font-weight:bold;}
+#main_lnb_wrap{background: #1c5da3;} /*브라우저 전체의 색깔을 지정*/
+#main_lnb{width: 980px;margin: 0 auto;} /*해당 메뉴의 사이즈지정하고 메뉴의 위치를 가운데로*/
+#lnb>ul{width: 100%;} /*메뉴들을 감싸는 ul 100%지정*/
+#lnb>ul>li{float: left; width: 16%; border-right: 1px solid #336eac;} /*행을 열로 플로트시키고 각너비를 16%로 하고 오른쪽보더1 색넣고*/
+#lnb>ul>li:first-child{border-left: 1px solid #336eac;} /*첫번째자식은 왼쪽보더 1 색넣고*/
+#lnb>ul>li>a{display: block; line-height: 40px;	text-align: center; color: white; font-weight:bold;} /*블럭화시키고 행간을 40 링크에 하는게 낫다.*/
 #lnb a:hover{background: skyblue;color: #1c5da3;}
 
+/*visual_wrap*/
+#visual_wrap{height: 400px;background: #203969 url(../images/visual_bg.jpg) no-repeat;}
+div.visual{width: 980px;height: 400px;margin: 0 auto; position: relative;overflow: hidden;}
+div.visual img{position: absolute;}
+div.visual .img01{right: 0;bottom: -100px;}
+div.visual .img02{left: 0;bottom: 70px;}
+div.test{height: 200px;background: #f00;}
