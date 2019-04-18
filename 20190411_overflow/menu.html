@@ -12,14 +12,33 @@
 		/*menu*/
 		div.menu_wrap{}
 		div.menu_wrap>ul{width: 1000px; margin: 0 auto;height: 40px;}
+
 		div.menu_wrap>ul>li{float: left; background: green;}
 		div.menu_wrap>ul>li>a{line-height: 40px; width: 200px; display: block; text-align: center;font-weight: bold;}
 		div.menu_wrap>ul>li:hover{background: orange;}
 		div.menu_wrap ul.sub{display: none;}
-		div.menu_wrap>ul>li:hover ul.sub{display: block;}
+		div.menu_wrap>ul:hover ul.sub{display: block;}
+		
 		ul.sub{width: 100%;}
 		ul.sub>li{text-align: center;line-height: 30px;}
+
 		.visual_wrap{height: 400px;background: gray;}
+
+		section.content{}
+		section.content>ul{margin: 20px auto; width: 1000px;}
+		section.content>ul>li{float: left; width: 240px; margin-right: 13.33px}
+		section.content>ul>li:last-child{margin-right: 0;}
+		section.content>ul>li img{display: block;width: 100%;}
+		section.content>ul>li .card_text{padding: 15px;background: #cdcdcd;}
+
+		.content_2st_wrap{background:skyblue;padding:20px;}		
+		section.content_2s{}
+		section.content_2s>ul{margin: 20px auto; width: 1000px;}
+		section.content_2s>ul>li{float: left; width: 240px; margin-right: 13.33px}
+		section.content_2s>ul>li:last-child{margin-right: 0;}
+		section.content_2s>ul>li img{display: block;width: 100%;}
+		section.content_2s>ul>li .card_text2{padding: 15px;background: #cdcdcd;}
+
 	</style>
 </head>
 <body>
@@ -63,5 +82,89 @@
 		</ul>
 	</div>
 	<div class="visual_wrap"></div>
+	<section class="content">
+		<ul class="clearfix">
+			<li>
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="testimg">
+					<div class="card_text">
+						<h4>Mr.Ryu</h4>
+						<p>Architecture engineering</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="testimg">
+					<div class="card_text">
+						<h4>Mr.Ryu</h4>
+						<p>Architecture engineering</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="testimg">
+					<div class="card_text">
+						<h4>Mr.Ryu</h4>
+						<p>Architecture engineering</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="testimg">
+					<div class="card_text">
+						<h4>Mr.Ryu</h4>
+						<p>Architecture engineering</p>
+					</div>
+				</div>
+			</li>			
+		</ul>
+	</section>
+
+
+	<div class="content_2 wrap">
+		<section class="content_2s">
+			<ul class="clearfix">
+				<li>
+					<div class="card">
+						<img src="../images/testimg.jpg" alt="testimg">
+						<div class="card_text">
+							<h4>Mr.Ryu</h4>
+							<p>Architecture engineering</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="../images/testimg.jpg" alt="testimg">
+						<div class="card_text2">
+							<h4>Mr.Ryu</h4>
+							<p>Architecture engineering</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="../images/testimg.jpg" alt="testimg">
+						<div class="card_text2">
+							<h4>Mr.Ryu</h4>
+							<p>Architecture engineering</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="../images/testimg.jpg" alt="testimg">
+						<div class="card_text2">
+							<h4>Mr.Ryu</h4>
+							<p>Architecture engineering</p>
+						</div>
+					</div>
+				</li>			
+			</ul>
+		</section>
+	</div>
 </body>
 </html>
