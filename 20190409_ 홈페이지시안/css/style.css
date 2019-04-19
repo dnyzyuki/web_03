@@ -30,3 +30,47 @@ div.visual img{position: absolute;}
 div.visual .img01{right: 0;bottom: -100px;}
 div.visual .img02{left: 0;bottom: 70px;}
 div.test{height: 200px;background: #f00;}
+
+/* section main_banner */
+section.main_banner{background: #eeeeee; margin-bottom: 20px;}
+section.main_banner .banner{width: 980px;margin: 0 auto;}
+div.banner>ul{width: 100%;}
+div.banner>ul>li{float: left; width: 20%;height: 200px;text-align: center;color: white;	cursor: pointer;}
+div.banner>ul>li:nth-child(1){background-color: #7c99b9;}
+div.banner>ul>li:nth-child(2){background-color: #4f74a1;}
+div.banner>ul>li:nth-child(3){background-color: #4b8ce0;}
+div.banner>ul>li:nth-child(4){background-color: #3db5f2;}
+div.banner>ul>li:nth-child(5){background-color: #95c8ff;}
+div.banner>ul>li:nth-child(1):hover,
+div.banner>ul>li:nth-child(2):hover,
+div.banner>ul>li:nth-child(3):hover,
+div.banner>ul>li:nth-child(4):hover,
+div.banner>ul>li:nth-child(5):hover{background-color: #336eac;}
+div.banner>ul>li img{display: block;margin: 0 auto;}
+div.banner>ul>li .card{width: 100%; padding: 15px;}
+div.banner>ul>li .card-body{padding-top: 15px;}
+div.banner>ul>li .card-title{margin-bottom: 5px;}
+
+/*main_article*/
+section.main_article{width: 980px;margin: 0 auto; margin-bottom: 30px;}
+section.main_article>ul>li{float:left; width: 310px; margin-right: 25px;}
+section.main_article>ul>li:last-child{margin-right: 0;}
+section.main_article div.card{width: 100%;}
+section.main_article div.card img{display: block;}
+section.main_article div.card .card-body{border:1px solid #ddd; padding: 15px;}
+section.main_article div.card .card-title{margin-bottom: 5px;}
+
+/*sub_article*/
+section.sub_article{width: 980px;margin: 0 auto; margin-bottom: 30px;}
+section.sub_article>ul>li{float:left; width: 310px; margin-right: 25px; position: relative; border:1px solid #ddd;}
+section.sub_article>ul>li:last-child{margin-right: 0;}
+section.sub_article div.card img{position: absolute;right:-40px; padding: 20px;}
+section.sub_article div.card .card-body{padding: 15px; position: absolute;top: 0;left: 0;}
+section.sub_article div.card .card-title{margin-bottom: 5px;}
+section.sub_article div.card .card-text{width: 150px; margin-bottom: 5px;}
+section.sub_article div.card .card-btn{color: blue;}
+
+/*fooer*/
+footer.footer_content{}
+footer.footer_content .foot{}
+footer.footer_content .foot>li{}
