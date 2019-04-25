@@ -33,11 +33,13 @@ body{font-family: 'Roboto', sans-serif;}
 
 #header .content .row img{margin: 0 auto; margin-bottom: 10px;}
 
+#header .content .content-1st{width: 170px; position: absolute;left:50%;top:50%;transform:translate(-50%,-50%); text-align: center;color: white;}
+
+#header .content .content-5st{width: 170px; position: absolute;left:50%;top:50%;transform:translate(-50%,-50%); text-align: center;color: white;}
+
+#header .content .content-6st{width: 170px; position: absolute;left:50%;top:50%;transform:translate(-50%,-50%); text-align: center;color: white;}
+
 #header .content .content-7st{position: absolute;top:0; color: white;left:50px;top:50px;}
 #header .content .content-7st h4{position: relative;margin-bottom: 25px;}
 #header .content .content-7st h4:after{content: ""; position: absolute;width: 50px;height: 2px;background: #fff;left:0;bottom:-15px;}
 #header .content .content-7st p{font-size: 2em;}
-
-#header .content .content-1st{width: 170px; position: absolute;left:50%;top:50%;transform:translate(-50%,-50%); text-align: center;color: white;}
-#header .content .content-1st img{}
-#header .content .content-1st h3{}
