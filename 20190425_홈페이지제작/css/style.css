@@ -20,3 +20,24 @@ body{font-family: 'Roboto', sans-serif;}
 #header div.txt_wrap >p.txt_title{font-size: 3em;position: relative; margin-bottom: 30px;}
 #header div.txt_wrap >p.txt_title:after{content: "";display: block;position: absolute;width: 100%;height: 2px;left:0;background: #fff;bottom: -15px;}
 #header div.txt_wrap >p.txt_content{}
+#header .content{width: 1260px;height: 1255px;bottom: 0;position: absolute;left:50%; transform: translateX(-50%);}
+#header .content .row{width: 100%;}
+#header .content .row>div{float: left;width: 25%;height: 315px;position: relative;}
+#header .content .row>div:nth-child(1){background:skyblue;}
+#header .content .row>div:nth-child(2){background:lightblue;}
+#header .content .row>div:nth-child(3){background:darkblue;}
+#header .content .row>div:nth-child(4){background:pink;}
+#header .content .row>div:nth-child(5){background:red;}
+#header .content .row>div:nth-child(6){background:blue;}
+#header .content .row>div:nth-child(7){width: 50%;background:gold;}
+
+#header .content .row img{margin: 0 auto; margin-bottom: 10px;}
+
+#header .content .content-7st{position: absolute;top:0; color: white;left:50px;top:50px;}
+#header .content .content-7st h4{position: relative;margin-bottom: 25px;}
+#header .content .content-7st h4:after{content: ""; position: absolute;width: 50px;height: 2px;background: #fff;left:0;bottom:-15px;}
+#header .content .content-7st p{font-size: 2em;}
+
+#header .content .content-1st{width: 170px; position: absolute;left:50%;top:50%;transform:translate(-50%,-50%); text-align: center;color: white;}
+#header .content .content-1st img{}
+#header .content .content-1st h3{}
